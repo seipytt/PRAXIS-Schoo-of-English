@@ -1,0 +1,59 @@
+.contenedorNosotros {
+width: 75%;
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: 'Sintony', sans-serif;
+  padding: 30px;
+  
+}
+
+.iden {
+  text-align: center;
+  font-size: 40px;
+  
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+  
+
+  
+
+
+  .content{
+    display: flex;
+    
+    flex: 1;
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 4px;
+    transition: all .3s ease;
+  }
+
+  .content:hover{
+    color: white;
+  }
+  .content-1:hover{
+    border-color: $color-amarillo;
+    background: $color-amarillo;
+  }
+
+  .content-2:hover{
+    border-color: $color-rojo;
+    background: $color-rojo;
+  }
+
+  .content-3:hover{
+    border-color: $color-azul;
+    background: $color-azul;
+  }
+
+  .content p{
+    font-size: 17px;
+    text-align: justify;
+    
+  }

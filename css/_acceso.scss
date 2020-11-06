@@ -1,0 +1,33 @@
+.accesos {
+width: 90%;
+margin: auto;
+text-align: center;
+
+
+font-family: 'Source Sans Pro', sans-serif;
+font-size: 20px;
+
+
+}
+
+.accesoFamilias {
+    color: white;
+    border: white;
+    background-color: $color-azul;
+}
+
+.accesoProfesores {
+    border: white;
+    
+    background-color: $color-celeste;
+    
+}
+
+.mercadoPago div {
+display: inline;
+}
+.mercadoPago div img {
+    bottom: 100px;
+}
+
+    

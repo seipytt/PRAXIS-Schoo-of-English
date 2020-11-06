@@ -1,0 +1,194 @@
+@import "colores";
+/* logo */
+
+
+
+.logoIndex {
+ padding-top: 10px;
+    display: block;
+    margin: auto;
+}
+
+header img:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: transform 0.5s, -webkit-transform 0.5s;
+cursor: pointer;
+}
+
+
+/* h1 */
+
+h1 {
+text-align: center;
+font-family: 'Anton', sans-serif;
+font-size: 70px;
+color: $color-rojo;
+
+
+}
+
+
+/* nav */
+
+nav 
+{
+    width: 90%;
+    margin: auto;
+}
+ul {
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+nav a {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    font-family: "Source Sans Pro";
+    font-size: 20px;
+    text-decoration: none !important;
+    color: $color-rojo !important;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    background: $color-azul;
+}
+
+
+nav ul ul a {
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+    list-style: none !important;
+    text-decoration: none !important;
+    
+}
+
+nav ul li:hover > ul {
+    display: block;
+    text-decoration: none !important;
+    list-style: none !important;
+}
+
+
+#nav-toggle{
+    display: none;
+  }
+
+nav  label{
+    display: none;
+
+  }
+
+/* intro */
+
+.intro p { 
+  line-height: 1;
+    margin: auto;
+    text-align: center;
+    padding: 50px;
+font-family: "Sintony";
+padding: 10px;
+
+}
+
+
+/* carousel */
+
+.carouselConteiner {
+    margin: auto;
+    width: 90%;
+
+}
+
+
+/* footer */
+
+footer {
+    padding: 35px;
+    padding-top: 55px;
+    padding-bottom: 50px;
+}
+
+
+
+.grid-container-footer {
+  
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    align-items: center;
+    grid-template-areas:
+      "face insta telefono mail direccion";}
+  
+  .face { grid-area: face; }
+  .insta { grid-area: insta;}
+  .telefono { grid-area: telefono;}
+  .mail { grid-area: mail; }
+  .direccion { grid-area: direccion; }
+  
+  
+  
+  .grid-container-footer div  {
+      text-align: center;
+      padding: 5px ;
+      font-size: 40px;
+  
+         
+    }
+  
+  div div a
+  {
+  text-decoration: none;
+    list-style: none;
+    color: black;
+      }
+  
+  .boton  i {
+    height: 60px;
+    width: 60px;
+    font-size: 25px;
+  line-height: 60px;
+      border-radius: 50px;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+    
+    transition: all 0.3s ease-out;
+    
+  }
+  
+  
+  .face :hover i {
+    color: #fff;
+    background: #4267B2;}
+  
+  .insta :hover i {
+    color: #fff;
+    background: #E1306C;}
+  
+  .telefono :hover i {
+    color: #fff;
+    background: #29D967;}
+  
+  
+  
+  .mail :hover i {
+    color: #fff;
+    background: #F24949 ;}
+  
+  .direccion :hover i {
+    color: #fff;
+    background: #297BE7;}
+ 
+  
+  
+  
