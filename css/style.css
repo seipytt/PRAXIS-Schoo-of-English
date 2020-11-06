@@ -9,23 +9,16 @@ font-family: 'Sintony', sans-serif;
 font-family: 'Source Sans Pro', sans-serif;
 */
 /* logo */
-.logoIndex {
-  padding-top: 10px;
-  display: block;
-  margin: auto;
-}
-
 header img:hover {
-  -webkit-transform: scale(1.1);
   transform: scale(1.1);
-  transition: transform 0.5s, -webkit-transform 0.5s;
+  transition: transform 0.5s;
   cursor: pointer;
 }
 
 /* h1 */
 h1 {
   text-align: center;
-  font-family: 'Anton', sans-serif;
+  font-family: "Anton", sans-serif;
   font-size: 70px;
   color: #f02137;
 }
@@ -40,17 +33,12 @@ ul {
   margin: 0;
   padding-left: 0;
   list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
 nav li {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  -ms-flex-negative: 1;
-      flex-shrink: 1;
+  flex-grow: 1;
+  flex-shrink: 1;
 }
 
 nav a {
@@ -114,45 +102,31 @@ footer {
 }
 
 .grid-container-footer {
-  display: -ms-grid;
   display: grid;
   width: 100%;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   gap: 0px 0px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-      grid-template-areas: "face insta telefono mail direccion";
+  align-items: center;
+  grid-template-areas: "face insta telefono mail direccion";
 }
 
 .face {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
   grid-area: face;
 }
 
 .insta {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
   grid-area: insta;
 }
 
 .telefono {
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
   grid-area: telefono;
 }
 
 .mail {
-  -ms-grid-row: 1;
-  -ms-grid-column: 4;
   grid-area: mail;
 }
 
 .direccion {
-  -ms-grid-row: 1;
-  -ms-grid-column: 5;
   grid-area: direccion;
 }
 
@@ -174,35 +148,33 @@ div div a {
   font-size: 25px;
   line-height: 60px;
   border-radius: 50px;
-  -webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
-  -webkit-transition: all 0.3s ease-out;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease-out;
 }
 
 .face :hover i {
   color: #fff;
-  background: #4267B2;
+  background: #4267b2;
 }
 
 .insta :hover i {
   color: #fff;
-  background: #E1306C;
+  background: #e1306c;
 }
 
 .telefono :hover i {
   color: #fff;
-  background: #29D967;
+  background: #29d967;
 }
 
 .mail :hover i {
   color: #fff;
-  background: #F24949;
+  background: #f24949;
 }
 
 .direccion :hover i {
   color: #fff;
-  background: #297BE7;
+  background: #297be7;
 }
 
 @media screen and (max-width: 756px) {
@@ -262,7 +234,7 @@ div div a {
   padding: 4px;
   font-family: "Sintony";
   width: 100%;
-  line-height: 0.0;
+  line-height: 0;
 }
 
 @media screen and (max-width: 756px) {
@@ -277,15 +249,12 @@ div div a {
     padding: 5px;
   }
   .grid-container-footer {
-    display: -ms-grid;
     display: grid;
     width: 95%;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-    -ms-grid-rows: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     gap: 0px 0px;
-        grid-template-areas: "face insta" "telefono mail" "direccion direccion";
+    grid-template-areas: "face insta" "telefono mail" "direccion direccion";
   }
   div {
     padding-top: 2px;
@@ -302,107 +271,33 @@ div div a {
 
 /* */
 @media screen and (max-width: 756px) {
-  body .grid-cursos {
-    display: -ms-grid;
-    display: grid;
-    width: 95%;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-    gap: 8px 8px;
-        grid-template-areas: "ninos" "adultos" "apoyo" "exam" "travel";
-  }
-  div {
-    line-height: 1;
-  }
-}
-
-@media screen and (max-width: 756px) {
   body .contactoWhatsapp {
-    display: -ms-grid;
     display: grid;
     width: 90%;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    -ms-grid-rows: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        grid-template-areas: "tambien"  "iconWhatsapp";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "tambien" "iconWhatsapp";
   }
   div {
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-    -ms-grid-column-align: center;
-        justify-self: center;
+    align-self: center;
+    justify-self: center;
   }
 }
 
-.grid-cursos {
-  display: -ms-grid;
-  display: grid;
-  width: 95%;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  -ms-grid-rows: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
-  gap: 10px 10px;
-      grid-template-areas: "ninos ninos adultos adultos apoyo apoyo" ". exam exam travel travel .";
-}
-
-.ninos {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-area: ninos;
-}
-
-.adultos {
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 2;
-  grid-area: adultos;
-}
-
-.apoyo {
-  -ms-grid-row: 1;
-  -ms-grid-column: 5;
-  -ms-grid-column-span: 2;
-  grid-area: apoyo;
-}
-
-.exam {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 2;
-  grid-area: exam;
-}
-
-.travel {
-  -ms-grid-row: 2;
-  -ms-grid-column: 4;
-  -ms-grid-column-span: 2;
-  grid-area: travel;
+.cursos {
+  margin: 1rem 0;
 }
 
 .grid-cursos .cursos {
   text-align: center;
-  width: 150px;
-  margin: 0;
-  display: inline-block;
   width: 90%;
   border: solid 3.5px #f02137;
-  padding: 5px;
-  -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
-          box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
-  -webkit-transition: all .25s ease-in-out;
-  transition: all .25s ease-in-out;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  transition: all 0.25s ease-in-out;
 }
 
 .grid-cursos .cursos:hover img {
-  -webkit-filter: grayscale(0);
-          filter: grayscale(0);
+  filter: grayscale(0);
 }
 
 .grid-cursos .cursos:hover {
@@ -411,16 +306,14 @@ div div a {
 
 .grid-cursos div img {
   width: 100%;
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
-  -webkit-transition: all .25s ease-in-out;
-  transition: all .25s ease-in-out;
+  filter: grayscale(100%);
+  transition: all 0.25s ease-in-out;
 }
 
 .texto {
   /*  font-family: 'Anton', sans-serif; */
   /*  font-family: 'Sintony', sans-serif; */
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   text-transform: lowercase;
 }
 
@@ -434,9 +327,8 @@ div div a {
 }
 
 .grid-cursos :hover div {
-  -webkit-transform: scale(1.1);
   transform: scale(1.1);
-  transition: transform 0.5s, -webkit-transform 0.5s;
+  transition: transform 0.5s;
   cursor: pointer;
   text-transform: uppercase;
 }
@@ -449,41 +341,36 @@ div div a {
   width: 90%;
   margin: auto;
   text-align: center;
+  padding: 3rem 0;
+  background-color: #fca300;
 }
 
 .formularioContacto {
   border: white;
-  background-color: #fca300;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.formularioContacto > div {
+  padding: 0.5rem 0;
 }
 
 .contactoWhatsapp {
   width: 90%;
-  margin: auto;
-  text-align: center;
-  display: -ms-grid;
-  display: grid;
-  width: 90%;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  gap: 0px 0px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-      grid-template-areas: "tambien iconWhatsapp";
-}
-
-.tambien {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: tambien;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .iconWhatsapp {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  grid-area: iconWhatsapp;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .contactoWhatsapp div {
@@ -491,28 +378,24 @@ div div a {
 }
 
 .tambien {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 30px;
   text-align: right;
 }
 
 .iconWhatsapp {
   text-align: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   padding: 5px;
   font-size: 50px;
   color: black;
-  background: #29D967;
+  background: #29d967;
   font-weight: 400px;
   height: 60px;
   width: 60px;
   line-height: 60px;
   border-radius: 50px;
-  -webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
-  -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
 
@@ -524,29 +407,11 @@ div div a {
 /* efecto*/
 .tambienNos {
   color: #f02137;
-  -webkit-animation-name: tambienEfecto;
-          animation-name: tambienEfecto;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 3);
-          animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 3);
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-}
-
-@-webkit-keyframes tambienEfecto {
-  0% {
-    font-size: 35px;
-  }
-  50% {
-    font-size: 35px;
-    color: #023440;
-  }
-  100% {
-    font-size: 35px;
-  }
+  animation-name: tambienEfecto;
+  animation-duration: 1s;
+  animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 3);
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
 }
 
 @keyframes tambienEfecto {
@@ -566,7 +431,7 @@ div div a {
   width: 90%;
   margin: auto;
   text-align: center;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 20px;
 }
 
@@ -574,11 +439,13 @@ div div a {
   color: white;
   border: white;
   background-color: #023440;
+  padding: 4rem 0;
 }
 
 .accesoProfesores {
   border: white;
   background-color: #4790e7;
+  padding: 4rem 0;
 }
 
 .mercadoPago div {
@@ -593,10 +460,9 @@ div div a {
   width: 75%;
   margin: auto;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   text-align: center;
-  font-family: 'Sintony', sans-serif;
+  font-family: "Sintony", sans-serif;
   padding: 30px;
 }
 
@@ -604,23 +470,19 @@ div div a {
   text-align: center;
   font-size: 40px;
   text-transform: uppercase;
-  letter-spacing: 1px;
-  font-family: 'Source Sans Pro', sans-serif;
+  letter-spacing: 2px;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 .content {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  flex-direction: column;
+  flex: 1;
   margin: 20px;
   padding: 20px;
   border: 2px solid black;
   border-radius: 4px;
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
 
 .content:hover {
@@ -645,5 +507,16 @@ div div a {
 .content p {
   font-size: 17px;
   text-align: justify;
+}
+
+body > div {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
+body header {
+  padding: 2rem 0;
 }
 /*# sourceMappingURL=style.css.map */

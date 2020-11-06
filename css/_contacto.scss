@@ -2,98 +2,95 @@
     width: 90%;
     margin: auto;
     text-align: center;
+    padding: 3rem 0;
+    background-color: $color-amarillo;
 }
 
 .formularioContacto {
-border: white;
-    background-color: $color-amarillo;
-    font-family: 'Source Sans Pro', sans-serif;
+    border: white;
+
+    font-family: "Source Sans Pro", sans-serif;
     font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    > div {
+        padding: 0.5rem 0;
+    }
 }
 
-
 .contactoWhatsapp {
-
     width: 90%;
-    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.iconWhatsapp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactoWhatsapp div {
+    padding: 20px;
+}
+
+.tambien {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 30px;
+    text-align: right;
+}
+
+.iconWhatsapp {
     text-align: center;
-  
-        display: grid;
-        width: 90%;
-        grid-template-columns: 1fr 1fr ;
-        gap: 0px 0px;
-        align-items: center;
-        grid-template-areas:
-          "tambien iconWhatsapp";}
-      
-      .tambien { grid-area: tambien; }
-      .iconWhatsapp { grid-area: iconWhatsapp;}
+    align-items: center;
+    padding: 5px;
+    font-size: 50px;
 
-      .contactoWhatsapp div {
-        
-        padding: 20px;
-      }
-      
-    .tambien {
-        font-family: 'Source Sans Pro', sans-serif;
-        font-size: 30px;
-        text-align: right;
+    color: black;
+    background: #29d967;
+
+    font-weight: 400px;
+    height: 60px;
+    width: 60px;
+
+    line-height: 60px;
+    border-radius: 50px;
+    -webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.contactoWhatsapp :hover i {
+    color: white;
+    cursor: pointer;
+}
+
+/* efecto*/
+
+.tambienNos {
+    color: $color-rojo;
+    animation-name: tambienEfecto;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 3);
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes tambienEfecto {
+    0% {
+        font-size: 35px;
     }
-    
-    .iconWhatsapp {
-        text-align: center;
-        align-items: center;
-        padding: 5px;
-        font-size: 50px;
-
-
-        color:black;
-        background: #29D967;
-
-
-        font-weight: 400px;
-        height: 60px;
-width: 60px;
-
-line-height: 60px;
-border-radius: 50px;
--webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
--webkit-transition: all 0.3s ease-out;
-transition: all 0.3s ease-out;
+    50% {
+        font-size: 35px;
+        color: $color-azul;
     }
-
-    .contactoWhatsapp  :hover i {
-        color: white;
-        cursor: pointer;
-        }
-
-
-
-        /* efecto*/
-
-        .tambienNos {
-            color: $color-rojo;
-            animation-name: tambienEfecto;
-            animation-duration: 1s;
-            animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 3.0);
-            animation-delay: 0s;
-            animation-iteration-count: infinite;
-            
-            
-            }
-          
-          
-          
-          @keyframes tambienEfecto {
-            0%   {
-              font-size: 35px;
-              }
-            50%   {
-              font-size: 35px; 
-              color: $color-azul;
-              }
-            100%   {
-              font-size: 35px;
-              }
-          }
+    100% {
+        font-size: 35px;
+    }
+}

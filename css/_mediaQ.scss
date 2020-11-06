@@ -1,169 +1,127 @@
-@media screen and (max-width: 756px){
+@media screen and (max-width: 756px) {
+    /* logo */
+    .logoIndex {
+        width: 90%;
+        display: block;
+        margin: auto;
+    }
 
-  /* logo */
-  .logoIndex {
-    width: 90%;
-    display: block;
-    margin: auto;
-}
-
-
-/* nav */
+    /* nav */
     nav {
         display: block;
         width: 90%;
         label {
-        display: block;
-        font-size: 30px;
-        text-align: center;
-        cursor: pointer;
-        width: 100%;
-        margin: 0 auto;
-        color: $color-azul;            
-    }
-     
-      a{
-        display: block;
-      }
-      ul {
-        text-align: center;
-        display: none;
-     li{
-          display: block;
-          padding: 5px;
-          
-          &:hover ul {
-              padding: 0; 
-              position: relative;
-              li {
-                padding: 5px;
-              }
-            }
-          ul {
-            li {
-               padding: 0; 
-              a {  text-align:center; }
-         
-            }
-          }
+            display: block;
+            font-size: 30px;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+            margin: 0 auto;
+            color: $color-azul;
         }
-      }
-    }
-    #nav-toggle:checked + ul{
-      display: block;
-    }
-  } 
 
-  /* intro */
+        a {
+            display: block;
+        }
+        ul {
+            text-align: center;
+            display: none;
+            li {
+                display: block;
+                padding: 5px;
+
+                &:hover ul {
+                    padding: 0;
+                    position: relative;
+                    li {
+                        padding: 5px;
+                    }
+                }
+                ul {
+                    li {
+                        padding: 0;
+                        a {
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #nav-toggle:checked + ul {
+        display: block;
+    }
+}
+
+/* intro */
 
 .intro p {
-  margin: auto;
-  text-align: center;
-  padding: 4px;
-font-family: "Sintony";
-width: 100%;
-line-height: 0.0;
-}
-
-
-@media screen and (max-width: 756px){
-  .carouselConteiner
-  {
+    margin: auto;
+    text-align: center;
+    padding: 4px;
+    font-family: "Sintony";
     width: 100%;
-  }}
-
-  /*  footer */
-
-
-  @media screen and (max-width: 756px){
-
-footer {
-  padding: 5px;
+    line-height: 0;
 }
 
-    .grid-container-footer {
-      display: grid;
-    
-    width: 95%;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 0px 0px;
-    grid-template-areas:
-      "face insta"
-      "telefono mail"
-      "direccion direccion";}
+@media screen and (max-width: 756px) {
+    .carouselConteiner {
+        width: 100%;
+    }
+}
 
-      div {
-        padding-top: 2px;
-padding: 10px;
+/*  footer */
 
-line-height: 0.1;
-      }
-      .boton i {
-      height: 30px;
-      
-      width: 30px;
-      font-size: 14px;
-      line-height: 30px;
+@media screen and (max-width: 756px) {
+    footer {
+        padding: 5px;
     }
 
-
-
-     }
-
-
-
-     /* */
-     @media screen and (max-width: 756px){
-
-body      .grid-cursos {
-
+    .grid-container-footer {
         display: grid;
-    
+
         width: 95%;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-        gap: 8px 8px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 0px 0px;
         grid-template-areas:
-        "ninos"
-        "adultos"
-        "apoyo"
-      "exam"
-      "travel"  ;}
+            "face insta"
+            "telefono mail"
+            "direccion direccion";
+    }
 
-      div {
+    div {
+        padding-top: 2px;
+        padding: 10px;
 
-        line-height: 1;
-      }
-        
-        }
+        line-height: 0.1;
+    }
+    .boton i {
+        height: 30px;
 
-      
+        width: 30px;
+        font-size: 14px;
+        line-height: 30px;
+    }
+}
 
-        @media screen and (max-width: 756px){
+/* */
 
-          
-
-body      .contactoWhatsapp {
-
+@media screen and (max-width: 756px) {
+    body .contactoWhatsapp {
         display: grid;
-    
+
         width: 90%;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr ;
-    
+        grid-template-rows: 1fr 1fr;
 
         grid-template-areas:
-        "tambien" 
-        "iconWhatsapp"  ;}
+            "tambien"
+            "iconWhatsapp";
+    }
 
-
-        div {
-
-          align-self: center;
-  justify-self: center;
-        }
+    div {
+        align-self: center;
+        justify-self: center;
+    }
 }
-          
-    
-

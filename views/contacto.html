@@ -1,133 +1,99 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <meta charset="utf-8">
 
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <meta charset="utf-8" />
 
-        <title>PRAXIS School of English - Cipolletti</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <link rel="stylesheet" href="../css/style.css">
+    <title>PRAXIS School of English - Cipolletti</title>
 
-        <link href="https://fonts.googleapis.com/css2?family=Anton&family=Sintony&family=Source+Sans+Pro:wght@900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Sintony&family=Source+Sans+Pro:wght@900&display=swap"
+        rel="stylesheet" />
 
-        
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" />
 
-    </head>
-
+    <link rel="stylesheet" href="../css/style.css" />
+</head>
 
 <body>
+    <div class="container-fluid">
+        <header>
 
+            <div class="row">
+                <a href="../index.html" class="mx-auto"><img src="../images/logoPraxisColor.png" width="350"
+                        alt="Praxis School of English Cipolletti" class="logoIndex"></a>
+            </div>
+            <nav>
+                <label for="nav-toggle">&#9776;</label>
+                <input type="checkbox" id="nav-toggle" />
+                <ul>
+                    <li><a href="../views/nosotros.html">Nosotros</a></li>
+                    <li><a href="../views/cursos.html">Cursos</a></li>
+                    <li><a href="../views/novedades.html">Novedades</a></li>
+                    <li><a href="../views/acceso.html">Acceso</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1>Contacto</h1>
 
-    <header>
-      <meta name="viewport" content="width=320, initial-scale=1">
-      <a href="../index.html"><img src="../images/logoPraxisColor.png" width="350" alt="Praxis School of English Cipolletti" class="logoIndex"></a>
+            <div class="contacto">
+                <form>
+                    <fieldset class="formularioContacto">
+                        <div>
+                            <label for="Usuario">Nombre:</label>
+                            <input type="text" name="Nombre" placeholder="nombre" />
+                        </div>
+                        <div>
+                            <label for="E-mail">
+                                <E-mail>E-Mail:</E-mail>
+                            </label>
+                            <input type="text" name="Nombre" placeholder="E-mail" />
+                        </div>
+                        <div>
+                            <h4>Busco información de Cursos para...</h4>
+                        </div>
+                        <div>
+                            <select name="Cursos">
+                                <option value="Niños">Niños</option>
+                                <option value="Adolescentes">Adolescentes</option>
+                                <option value="Adultos">Adultos</option>
+                            </select>
+                        </div>
+                        <div>
+                            <textarea name="comentarios" rows="10" cols="40">Disponibilidad horaria</textarea>
 
-    </header>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="acepta" value="1" /><label> Deseo recibir
+                                información de cursos y novedades</label></div>
+                        <div>
+                            <input type="reset" value="Limpiar" />
+                        </div>
+                        <div>
+                            <input type="submit" value="Enviar consulta" />
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </main>
+        <div class="contactoWhatsapp">
+            <div class="tambien tambienNos">
+                <p>también nos encontrás en...</p>
+            </div>
 
+            <div class="iconWhatsapp">
+                <a href="https://api.whatsapp.com/send?phone=+5492994244893" target="black">
+                    <i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </div>
 
-    <nav> 
-        <label for="nav-toggle">&#9776;</label>
-        <input type="checkbox" id="nav-toggle" />
-        <ul>
-            <li><a href="../views/nosotros.html">Nosotros</a></li>
-            <li><a href="../views/cursos.html">Cursos</a></li>
-            <li><a href="../views/novedades.html">Novedades</a>
-            <li><a href="../views/acceso.html">Acceso</a>
-            
-        </ul>
-    </nav>
-
-
-
-<h1>Contacto</h1>
-
-<div class="contacto">
-<form>
-    <fieldset class="formularioContacto">
-        <form>
-            <label for="Usuario">Nombre:</label>
-            <input type="text" name="Nombre" placeholder="nombre"/></form>
-            <br/>
-            <br/>
-            <form>
-                <label for="E-mail"><E-mail>E-Mail:</E-mail>:</label>
-                <input type="text" name="Nombre" placeholder="E-mail"/></form>
-                  
-    <br/>
-    <br/>
-      Busco información de Cursos para...
-      <form>
-          <select name="Cursos"> 
-            <option value="Niños">Niños</option>
-            <option value="Adolescentes">Adolescentes</option>
-            <option value="Adultos">Adultos</option>
-          </select>
-        </form>
-   
-<br/>
-<br/>
-
-    
-<textarea name="comentarios" rows="10" cols="40">Disponibilidad horaria</textarea>
-<br/>
-<br/>
-<form>
-    <input type="checkbox" name="acepta" value="1" />Deseo recibir información de cursos y novedades
-</form>
-<br/>
-<br/>
-
-<form>
-    <input type="reset" value="Limpiar"/>
-</form>
-
-
-<form>
-    <input type="submit" value="Enviar consulta"/>
-</form>
-
-</fieldset>
-</form>
-</div>
-
-<div class="contactoWhatsapp">
-<div class="tambien tambienNos">
-    <p>también nos encontrás en...</p>
-</div>
-
-<div class="iconWhatsapp">
-    <a href="https://api.whatsapp.com/send?phone=+5492994244893" target="black">
-    <i class="fab fa-whatsapp"></i></div>
-
-</div>
-
-
-
-
-<script src="https://kit.fontawesome.com/a076d05399.js"></script>
-
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </body>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 </html>
